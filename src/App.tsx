@@ -2,24 +2,23 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+const pupils1 = [
+  {
+    id: 0,
+    name: "Maksym",
+  },
+  {
+    id: 1,
+    name: "Vasya",
+  },
+];
+
+const App = () => {
+  const [pupils, setPupils] = React.useState<Pupil[]>(pupils1);
+  setPupils([{id:1, name: "KEK", surname : "sadasd"}])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
   );
 }
 
