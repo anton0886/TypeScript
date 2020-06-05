@@ -1,4 +1,5 @@
-declare interface Pupil{
-    id : number,
-    name : string,
+declare interface ListItem{
+    id: number,
+    text: string,
+    done: boolean
 }
