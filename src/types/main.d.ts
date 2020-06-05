@@ -1,4 +1,4 @@
-declare interface ListItem{
+declare interface ListItem {
     id: number,
     text: string,
     done: boolean
